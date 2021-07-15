@@ -14,11 +14,11 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due decima
 
 var numero_km = parseInt(prompt("Quanti Kilometri devi percorrere?"));
 
-console.log("Km da percorrere " + numero_km)
+console.log("Km da percorrere " + numero_km);
 
 var prezzo_biglietto = numero_km * 0.21;
 
-console.log("il biglietto costa Euro " + prezzo_biglietto)
+console.log("il biglietto costa Euro " + prezzo_biglietto);
 
 var eta = parseInt(prompt("inserisci età"));
 
@@ -32,3 +32,15 @@ console.log(sconto_18);
 
 console.log(sconto_65);
 
+if (eta <= 18)
+{
+    console.log("Il tuo biglietto under 18 costa Euro " + sconto_18);
+}
+else if (eta >= 65)
+{
+    console.log("Il tuo biglietto over 65 costa Euro " + sconto_65);
+}
+else 
+{
+    console.log("Il tuo biglietto costa Euro " + prezzo_biglietto);
+}
