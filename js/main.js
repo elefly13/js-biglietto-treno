@@ -16,13 +16,11 @@ var numero_km = parseInt(prompt("Quanti Kilometri devi percorrere?"));
 
 console.log("Km da percorrere " + numero_km);
 
-var prezzo_biglietto = numero_km * 0.21;
-
-console.log("il biglietto costa Euro " + prezzo_biglietto);
-
 var eta = parseInt(prompt("inserisci età"));
 
 console.log(eta);
+
+var prezzo_biglietto = numero_km * 0.21;
 
 
 if (eta <= 18)
