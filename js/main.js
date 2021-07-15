@@ -26,21 +26,23 @@ console.log(eta);
 
 var sconto_18 = Math.round((prezzo_biglietto * 0.80) * 100) / 100;
 
-var sconto_65 = prezzo_biglietto * 0.60;
+var sconto_65 = Math.round((prezzo_biglietto * 0.60) * 100) / 100;
 
 console.log(sconto_18);
 
 console.log(sconto_65);
 
+
+
 if (eta <= 18)
 {
-    console.log("Il tuo biglietto under 18 costa Euro " + sconto_18);
+    console.log("Il tuo biglietto scontato under 18 costa Euro " + sconto_18.toFixed( 2 ) );
 }
 else if (eta >= 65)
 {
-    console.log("Il tuo biglietto over 65 costa Euro " + sconto_65);
+    console.log("Il tuo biglietto scontato over 65 costa Euro " + sconto_65.toFixed( 2 ) );
 }
 else 
 {
-    console.log("Il tuo biglietto costa Euro " + prezzo_biglietto);
+    console.log("Il tuo biglietto costa Euro " + prezzo_biglietto.toFixed( 2 ));
 }
